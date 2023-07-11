@@ -1,0 +1,186 @@
+body{
+    background-color: #F1F1F1 ;
+    header{
+        max-width: 1166px;
+        width: 100%;
+        margin: 0 auto;
+        padding:21px 0 ;
+        margin-bottom: 12px;
+        nav{
+            width: 351px;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    a{
+                        @include hdstyle;
+                        color: $hdcolor;
+                    }
+                }
+              }
+            }
+        
+        }
+    }
+.s-1{
+    max-width: 1166px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 57px;
+    h2{
+        margin-bottom: 27px;
+        @include headline;
+    }
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        div{
+            width: 362px;
+            background-color: white;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            h2{
+                position: absolute;
+                top: 32px;
+                left: 41px;
+                @include phheadline
+            }
+            img{
+                width: 100%;
+                height: 186px;
+            }
+            h3{
+                @include phddescription;
+                margin-top: 68px;
+                margin-left: 37px;
+                margin-bottom: 11px;
+            }
+            .time{
+                width: 16px;
+                height: 16px;
+                margin-left: 40px;
+                margin-right: 11px;
+                margin-bottom: 40px;
+            }
+            h4{
+                @include time;
+            }
+
+            
+        }
+    }
+}
+.s-2{
+    max-width: 1166px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    h2{
+        @include headline;
+        font-weight: 800;
+        margin-bottom: 30px;
+    }
+    div{
+        max-width: 1166px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        h5{
+            position: absolute;
+            top: 203px;
+            left: 278px;
+            color: #FFF;
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            z-index: 2;
+        }
+
+        .two{
+            width: 758px;
+            height: 430px;
+            top: 472px;
+            left: 0px;
+
+        }
+        .three{
+            width: 362px;
+            height: 212px;
+            right: 0;
+
+        }
+        .four{
+            width: 362px;
+            height: 212px;
+            right: 0;
+            top: 310px;
+    
+        }
+        .five{
+            width: 362px;
+            height: 212px;
+            right: 0;
+            top: 625px;
+
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            max-width: 758px;
+            width: 100%;
+            .one{
+                margin-bottom: 42px;
+            }
+    
+        }
+        .ph{
+            max-width: 362px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: #243043;;
+    .ftr{
+        max-width: 1165px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 44px 0px;
+        display: flex;
+        justify-content: space-between;
+        .container{
+            width: 711px;
+            display: flex;
+            justify-content: space-between;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                
+                a{
+                    @include ftrinfo;
+                    margin-bottom: 14px;
+                }
+                p{
+                    @include ftrinfo;
+                    width: 249px;
+                }
+            }
+        }
+    }
+    img{
+        width: 38px;
+        height: 40px;
+    }
+}
